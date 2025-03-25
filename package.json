@@ -21,7 +21,8 @@
     "dist",
     "README.md",
     "LICENSE",
-    "package.json"
+    "package.json",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
