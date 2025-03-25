@@ -11,7 +11,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: {
-                index: resolve(__dirname, 'src/route-manager.ts'),
+                index: resolve(__dirname, 'src/index.ts'),
             },
             name: 'RouteManager'
         },
