@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "composite": true,
     "target": "ES2020",
@@ -14,11 +15,11 @@
     "outDir": "./dist",
     "rootDir": ".",
     "lib": ["ES2020", "DOM"],
+    "types": ["jest", "node"],
     "removeComments": true,
     "inlineSourceMap": false,
     "noImplicitAny": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
@@ -27,21 +28,8 @@
     "allowJs": true,
     "checkJs": false,
     "noEmit": false,
-    "isolatedModules": true,
-    "paths": {
-      "@thequinndev/route-manager/*": ["./src/route-manager/*"]
-    }
+    "isolatedModules": true
   },
-  "include": [
-    "src/**/*",
-    "examples/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.ts",
-    "**/*.spec.ts",
-    "**/*.test.js",
-    "**/*.spec.js"
-  ]
+  "include": ["src/**/*", "examples/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
