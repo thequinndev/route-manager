@@ -10,7 +10,8 @@
     }
   },
   "scripts": {
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:w": "vitest",
     "coverage": "vitest --coverage",
     "build": "npx rimraf dist && pnpm run build:esm",
     "build:esm": "tsc -p tsconfig.esm.json",

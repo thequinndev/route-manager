@@ -1,3 +1,4 @@
 pnpm lint
 pnpm lint-ts
 npx pretty-quick --staged
+pnpm run test
